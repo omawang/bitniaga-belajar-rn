@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     height: 50,
     borderTopRightRadius: 25,
     borderBottomRightRadius: 25,
-    backgroundColor: '#000',
+    backgroundColor: 'blue',
   },
   greater: {fontSize: 20, color: '#000', fontWeight: 'bold'},
   subtitleWrapper: {flexDirection: 'row'},
