@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StatusBar, StyleSheet} from 'react-native';
+import {View, TouchableOpacity, Text, StatusBar, StyleSheet} from 'react-native';
 import Space from './components/Space';
 
 const Login = () => {
@@ -20,6 +20,10 @@ const Login = () => {
         <Text style={styles.subtitle}>If you are new / </Text>
         <Text style={[styles.subtitle, {color: '#000'}]}>Create New</Text>
       </View>
+
+      <TouchableOpacity style={styles.button}>
+        <Text>Submit</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -35,11 +39,15 @@ const styles = StyleSheet.create({
     height: 50,
     borderTopRightRadius: 25,
     borderBottomRightRadius: 25,
-    backgroundColor: '#000',
+    backgroundColor: '#0000FF',
   },
   greater: {fontSize: 20, color: '#000', fontWeight: 'bold'},
   subtitleWrapper: {flexDirection: 'row'},
   subtitle: {fontSize: 16, color: '#DDDDDD'},
+  button: {
+    backgroundColor: 'red',
+    height: 50,
+  },
 });
 
 export default Login;
